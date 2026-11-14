@@ -85,14 +85,17 @@ want them, delete them in the app, or delete that folder.
    by Google Play services and run on your phone. **Your pictures are
    processed on the phone and are not sent to Google.** Google Play
    services may contact Google to download or update these tools. ML Kit
-   also sends Google diagnostic and usage information about the tools:
+   and LiteRT also send Google diagnostic and usage information about the
+   tools:
    the phone's manufacturer, model and Android version, its ML hardware,
    the app's package name and version, performance and error information
    (for example speed, picture size and error codes), a device identifier
    and an identifier for this installation of the app. Google uses it for
-   diagnostics and usage analytics, encrypts it in transit and does not
-   give it to third parties. Details:
-   https://developers.google.com/ml-kit/android-data-disclosure
+   diagnostics and usage analytics (and, for LiteRT, to detect misuse).
+   For ML Kit, Google states that this information is encrypted in transit
+   and not given to third parties. Details:
+   https://developers.google.com/ml-kit/android-data-disclosure and
+   https://developers.google.com/edge/litert/android/play_services
 3. **App updates.** The app asks Google Play whether a new version is
    available (about once a day). Updates are downloaded by Google Play.
 4. **Crash reports.** If you allowed your phone to share usage and
